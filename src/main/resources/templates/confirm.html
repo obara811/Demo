@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>送信完了</title>
+</head>
+<body>
+    <h1>送信完了</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>名前：</th>
+                <th>年齢：</th>
+                <th>メール：</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>[[${user.name}]]</td>
+                <td>[[${user.age}]]</td>
+                <td>[[${user.email}]]</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/form">戻る</a>
+</body>
+</html>
